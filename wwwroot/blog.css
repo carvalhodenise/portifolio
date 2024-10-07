@@ -1,0 +1,30 @@
+
+        .post {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .post-title {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .post-date {
+            font-size: 0.9rem;
+            color: #999;
+        }
+        .post-content {
+            margin-top: 10px;
+        }
+        .tags {
+            margin-top: 10px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }

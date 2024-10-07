@@ -1,0 +1,17 @@
+
+        .skill-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .skill-progress {
+            height: 30px;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+        .skill-title {
+            margin-bottom: 5px;
+        }
+  

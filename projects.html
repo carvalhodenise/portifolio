@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meus projetos</title>
+    <link rel="stylesheet" href="wwwroot/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="wwwroot/fontw/css/fontawesome.min.css">
+    <link rel="stylesheet" href="wwwroot/projectos .css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Denise Carvalho</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="" role="search">
+                <a class=" btn-sm btn  btn-primary" href="Blog.html" role="button">Portfólio</a>
+                <a class="btn-sm btn  btn-primary" href="sobre.html" role="button">About me</a>
+              </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">Meus Projetos</h1>
+
+        <!-- Filtros de Categoria -->
+        <div class="text-center mb-4">
+            <button class="btn btn-primary filter-button" onclick="filterProjects('all')">Todos</button>
+            <button class="btn btn-secondary filter-button" onclick="filterProjects('frontend')">Projeto 1</button>
+            <button class="btn btn-secondary filter-button" onclick="filterProjects('backend')">Projeto 2</button>
+            <button class="btn btn-secondary filter-button" onclick="filterProjects('fullstack')">Projeto 3</button>
+        </div>
+
+        <!-- Cartões de Projetos -->
+        <div class="row" id="project-container">
+            <div class="col-md-4 project-card" data-category="frontend">
+                <div class="card">
+                    <img src="wwwroot/imagens/tenweb_media_u9LbZWku.webp" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição breve do Projeto 1. Um projeto interessante que aborda...</p>
+                        <a href="#" class="btn btn-primary">Ver Repositório</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="backend">
+                <div class="card">
+                    <img src="wwwroot/imagens/tenweb_media_VHVzPbHw.webp" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição breve do Projeto 2. Um projeto que faz uso de...</p>
+                        <a href="#" class="btn btn-primary">Ver Repositório</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="fullstack">
+                <div class="card">
+                    <img src="wwwroot/imagens/tenweb_media_YImU2hva.webp" class="card-img-top" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Descrição breve do Projeto 3. Uma aplicação que...</p>
+                        <a href="#" class="btn btn-primary">Ver Repositório</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais projetos aqui -->
+        </div>
+    </div>
+
+    <script>
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category') === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+<link rel="" href="wwwroot/bootstrap/js/bootstrap.min.js">
+<link rel="stylesheet" href="wwwroot/fontw/js/fontawesome.min.js">
+
+</html>
